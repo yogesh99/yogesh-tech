@@ -28,7 +28,7 @@ export default function AboutPage() {
         </p>
       </header>
 
-      <div className="prose prose-neutral dark:prose-invert prose-lg max-w-none text-foreground/80">
+      <div className="prose prose-neutral prose-lg max-w-none text-foreground/80">
         <h2 className="text-2xl font-bold tracking-tight text-foreground font-sans mt-0">The Mission</h2>
         <p>
           I started <strong>yogesh.tech</strong> because I was tired of bloated, ad-ridden tools that solved simple problems with maximum friction. 
