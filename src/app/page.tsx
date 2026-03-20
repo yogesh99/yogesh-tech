@@ -16,7 +16,7 @@ export default function Home() {
           Simple Tech Tools That Solve Real Problems
         </h1>
         <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
-          An indie developer studio building practical utilities, browser extensions, and tools. Designed for speed, utility, and developers.
+          Fast, practical tools built by a tech engineer to solve real problems.
         </p>
         <div className="flex gap-4 mt-4">
           <Button href="/tools" size="lg" className="group">

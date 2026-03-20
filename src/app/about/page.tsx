@@ -21,7 +21,7 @@ export default function AboutPage() {
 
       <header className="flex flex-col gap-6">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight font-mono">
-          Building tools that <span className="text-foreground/50">don't suck.</span>
+          Building tools that <span className="text-foreground/50">actually solve real problems.</span>
         </h1>
         <p className="text-xl text-foreground/80 leading-relaxed">
           I'm Yogesh, a Full Stack engineer and product builder. Welcome to my utility lab.
@@ -57,15 +57,11 @@ export default function AboutPage() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 pt-6 not-prose">
-          <Button href="mailto:hello@yogesh.tech" size="lg" className="w-full sm:w-auto">
+          <Button href="mailto:yogesh.waradkar@gmail.com" size="lg" className="w-full sm:w-auto">
             <Mail className="mr-2 h-4 w-4" />
             Email Me
           </Button>
-          <Button href="https://twitter.com/yogesh" target="_blank" variant="outline" size="lg" className="w-full sm:w-auto">
-            <Twitter className="mr-2 h-4 w-4" />
-            Twitter
-          </Button>
-          <Button href="https://github.com/yogesh" target="_blank" variant="outline" size="lg" className="w-full sm:w-auto">
+          <Button href="https://github.com/yogesh99" target="_blank" variant="outline" size="lg" className="w-full sm:w-auto">
             <Github className="mr-2 h-4 w-4" />
             GitHub
           </Button>

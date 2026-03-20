@@ -9,6 +9,7 @@ export interface Tool {
   isComingSoon?: boolean;
   label?: string;
   installUrl?: string;
+  imageUrl?: string;
 }
 
 export const tools: Tool[] = [
@@ -30,6 +31,7 @@ export const tools: Tool[] = [
     ],
     label: "Featured",
     installUrl: "https://chrome.google.com/webstore",
+    imageUrl: "/site-reset-hero.png",
   },
   {
     id: "2",

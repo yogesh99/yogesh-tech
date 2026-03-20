@@ -108,15 +108,11 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
       </div>
 
       {/* Screenshot Placeholder */}
-      <section className="w-full aspect-[16/9] bg-foreground/[0.02] border border-foreground/10 rounded-2xl flex items-center justify-center relative overflow-hidden group">
-        <div className="absolute inset-0 bg-gradient-to-tr from-foreground/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-        <p className="text-foreground/40 font-mono text-sm flex flex-col items-center gap-2">
-          <svg className="h-8 w-8 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-          [App Screenshot Placeholder]
-        </p>
-      </section>
+      {tool.imageUrl && (
+        <section className="w-full aspect-[16/9] border border-foreground/10 rounded-2xl overflow-hidden shadow-xl">
+          <img src={tool.imageUrl} alt={`${tool.title} Screenshot`} className="w-full h-full object-cover" />
+        </section>
+      )}
 
       {/* Feedback CTA */}
       <section className="bg-foreground/[0.02] border border-foreground/10 p-8 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6">

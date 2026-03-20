@@ -17,9 +17,7 @@ export default function Footer() {
           &copy; {year ? year : ""} yogesh.tech. All rights reserved.
         </p>
         <div className="flex gap-6 text-sm text-foreground/60">
-          <Link href="https://twitter.com/yogesh" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Twitter</Link>
-          <Link href="https://github.com/yogesh" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub</Link>
-          <Link href="https://linkedin.com/in/yogesh" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">LinkedIn</Link>
+          <Link href="https://github.com/yogesh99" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub</Link>
         </div>
       </div>
     </footer>
