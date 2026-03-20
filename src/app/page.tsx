@@ -18,12 +18,12 @@ export default function Home() {
         <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
           Fast, practical tools built by a tech engineer to solve real problems.
         </p>
-        <div className="flex gap-4 mt-4">
-          <Button href="/tools" size="lg" className="group">
+        <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
+          <Button href="/tools" size="lg" className="group w-full sm:w-auto">
             Explore Tools
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button href="/about" variant="secondary" size="lg">
+          <Button href="/about" variant="secondary" size="lg" className="w-full sm:w-auto">
             Read My Story
           </Button>
         </div>
