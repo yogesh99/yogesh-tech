@@ -120,8 +120,8 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
            <h3 className="text-lg font-semibold">Have feedback or feature requests?</h3>
            <p className="text-foreground/60 text-sm">Help shape the future of this tool.</p>
          </div>
-         <Button variant="outline" href="https://twitter.com/yogesh" target="_blank">
-           Reach out on Twitter
+         <Button variant="outline" href="mailto:yogesh.waradkar@gmail.com" target="_blank">
+           Reach out via Email
          </Button>
       </section>
 
