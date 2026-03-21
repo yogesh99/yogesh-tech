@@ -65,11 +65,16 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
         </p>
 
         {tool.installUrl && !tool.isComingSoon && (
-          <div className="pt-4 flex gap-4">
-            <Button href={tool.installUrl} target="_blank" size="lg" className="w-full sm:w-auto">
+          <div className="pt-4 flex flex-col gap-2 w-full sm:w-auto">
+            <Button href={tool.installUrl} target="_blank" size="lg" className="w-full sm:w-min whitespace-nowrap">
               <Download className="mr-2 h-5 w-5" />
-              Install Extension
+              {tool.installText || "Install Extension"}
             </Button>
+            {tool.installUrl.endsWith('.zip') && (
+              <p className="text-xs text-foreground/50 max-w-sm">
+                Requires manual installation via Chrome Developer Mode until Web Store approval.
+              </p>
+            )}
           </div>
         )}
       </header>

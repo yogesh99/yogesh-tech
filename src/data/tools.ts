@@ -9,6 +9,7 @@ export interface Tool {
   isComingSoon?: boolean;
   label?: string;
   installUrl?: string;
+  installText?: string;
   imageUrl?: string;
 }
 
@@ -20,9 +21,10 @@ export const tools: Tool[] = [
     shortDescription: "A practical Chrome extension to completely clear local state (cookies, storage, cache) for the current tab.",
     fullDescription: "Reset Site is a developer-focused utility that allows you to start fresh on any domain with a single click. It securely clears localStorage, sessionStorage, cookies, and cache targeting only the active tab's domain.",
     howItWorks: [
-      "Click the extension icon in your toolbar.",
-      "Confirm the reset action.",
-      "The extension clears all local data and hard reloads the page."
+      "Download and extract the ZIP file below.",
+      "Go to chrome://extensions/ and toggle 'Developer mode' ON.",
+      "Click 'Load unpacked' and select the extracted folder.",
+      "Pin the extension and click it on any site to clear local data instantly!"
     ],
     benefits: [
       "Faster debugging for frontend applications.",
@@ -30,7 +32,8 @@ export const tools: Tool[] = [
       "Safe and domain-isolated."
     ],
     label: "Featured",
-    installUrl: "https://chrome.google.com/webstore",
+    installUrl: "/ResetSite-v1.0.0.zip",
+    installText: "Download ZIP (Manual Install)",
     imageUrl: "/reset-site-hero.png",
   },
   {
