@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import ToolCard from "@/components/ToolCard";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { tools } from "@/data/tools";
 import { ArrowRight } from "lucide-react";
 
@@ -64,6 +65,9 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {/* Newsletter */}
+      <NewsletterSignup />
 
       {/* About Preview */}
       <section className="p-8 md:p-12 rounded-3xl bg-foreground/[0.03] border border-foreground/5 mt-12 relative overflow-hidden">
