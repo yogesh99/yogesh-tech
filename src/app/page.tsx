@@ -5,7 +5,7 @@ import { tools } from "@/data/tools";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
-  const featuredTool = tools.find((t) => t.slug === "site-reset");
+  const featuredTool = tools.find((t) => t.slug === "reset-site");
   const comingSoonTool = tools.find((t) => t.slug === "voice-filler");
 
   return (

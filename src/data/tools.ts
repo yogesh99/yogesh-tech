@@ -15,10 +15,10 @@ export interface Tool {
 export const tools: Tool[] = [
   {
     id: "1",
-    slug: "site-reset",
-    title: "Site Reset Extension",
+    slug: "reset-site",
+    title: "Reset Site Extension",
     shortDescription: "A practical Chrome extension to completely clear local state (cookies, storage, cache) for the current tab.",
-    fullDescription: "Site Reset is a developer-focused utility that allows you to start fresh on any domain with a single click. It securely clears localStorage, sessionStorage, cookies, and cache targeting only the active tab's domain.",
+    fullDescription: "Reset Site is a developer-focused utility that allows you to start fresh on any domain with a single click. It securely clears localStorage, sessionStorage, cookies, and cache targeting only the active tab's domain.",
     howItWorks: [
       "Click the extension icon in your toolbar.",
       "Confirm the reset action.",
@@ -31,7 +31,7 @@ export const tools: Tool[] = [
     ],
     label: "Featured",
     installUrl: "https://chrome.google.com/webstore",
-    imageUrl: "/site-reset-hero.png",
+    imageUrl: "/reset-site-hero.png",
   },
   {
     id: "2",
