@@ -125,6 +125,21 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
          </Button>
       </section>
 
+      {/* Structured JSON-LD Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": tool.title,
+            "operatingSystem": "Any Chrome-based Browser",
+            "applicationCategory": "DeveloperApplication",
+            "description": tool.fullDescription,
+            "url": `https://yogesh.tech/tools/${tool.slug}`
+          })
+        }}
+      />
     </div>
   );
 }
