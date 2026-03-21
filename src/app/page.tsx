@@ -26,8 +26,8 @@ export default function Home() {
               <Settings className="w-3 h-3 mr-2 opacity-70" />
               <span>Building high-performance utilities.</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-foreground bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/60 leading-[1.1]">
-              Focus on what matters.
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-foreground bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/60 leading-[1.2]">
+              Simple Tech Tools That Solve Real Problems
             </h1>
             <p className="text-base md:text-lg text-foreground/60 max-w-lg mt-4 leading-relaxed font-medium">
               A collection of minimal, beautifully designed tools for engineers and creators who respect their time.
