@@ -216,7 +216,7 @@ ${content}`;
               </div>
             </h2>
 
-            <div className="relative flex-grow">
+            <div className="relative flex-grow min-h-[300px] lg:min-h-0">
               <pre className="absolute inset-0 bg-background/50 border border-emerald-500/10 rounded-xl p-5 overflow-auto text-sm font-mono text-foreground/80 leading-relaxed custom-scrollbar shadow-inner">
                 {generateMDX()}
               </pre>
