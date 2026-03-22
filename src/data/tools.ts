@@ -54,6 +54,28 @@ export const tools: Tool[] = [
     ],
     isComingSoon: true,
     label: "Beta Coming Soon"
+  },
+  {
+    id: "3",
+    slug: "mdx-generator",
+    title: "MDX Blog Studio",
+    shortDescription: "A visual markdown editor to generate perfectly formatted MDX blog posts with rich text, custom colors, and code snippets.",
+    fullDescription: "MDX Studio is a web-based utility built directly into yogesh.tech. It acts as a smart editor for your Next.js MDX blog. Write your posts using a rich toolbar, format text with colors and sizes, securely add code blocks, and instantly download the compiled .mdx file ready for deployment. No database required.",
+    howItWorks: [
+      "Fill in your post metadata (Title, Description, Date).",
+      "Use the rich text toolbar to natively format your markdown, add links, and insert code blocks.",
+      "Preview the raw MDX output in real-time.",
+      "Click Download to get your web-ready .mdx file exactly formatted for the yogesh.tech blog engine."
+    ],
+    benefits: [
+      "Eliminates the need to memorize YAML frontmatter syntax.",
+      "Easily apply custom font colors and sizes using generated inline JSX.",
+      "Zero-setup visual markdown editing."
+    ],
+    label: "New",
+    installUrl: "/tools/mdx-generator",
+    installText: "Launch Studio",
+    imageUrl: ""
   }
 ];
 
