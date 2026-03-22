@@ -33,6 +33,7 @@ const components = {
   h2: (props: any) => <h2 className="text-3xl font-bold tracking-tight mt-10 mb-4 border-b border-foreground/10 pb-2 font-sans text-foreground/90" {...props} />,
   h3: (props: any) => <h3 className="text-2xl font-bold tracking-tight mt-8 mb-4 shadow-[none] text-foreground/80" {...props} />,
   p: (props: any) => <p className="leading-relaxed text-lg text-foreground/80 mb-6 font-medium" {...props} />,
+  strong: (props: any) => <strong className="font-bold text-foreground" {...props} />,
   pre: (props: any) => <pre className="not-prose bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-5 overflow-x-auto my-6 text-sm backdrop-blur-sm shadow-inner text-foreground/80 font-mono" {...props} />,
   code: (props: any) => <code className="bg-foreground/[0.05] rounded-md px-1.5 py-0.5 text-[0.9em] font-mono font-bold border border-foreground/10 drop-shadow-sm text-foreground/80" {...props} />,
   a: (props: any) => <a className="text-blue-600 dark:text-blue-400 hover:text-blue-500 underline underline-offset-4 decoration-blue-500/30 hover:decoration-blue-500 font-semibold transition-all" {...props} />,
