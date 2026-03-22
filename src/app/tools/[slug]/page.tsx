@@ -98,8 +98,8 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
         )}
 
         {/* How it Works Card */}
-        <div className="relative overflow-hidden bg-blue-500/5 backdrop-blur-xl border border-blue-500/10 rounded-[2.5rem] p-8 md:p-10 transition-all duration-500 hover:bg-blue-500/10 hover:shadow-xl group">
-          <div className="h-14 w-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 mb-8 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3 shadow-sm">
+        <div className="relative overflow-hidden bg-blue-500/10 md:bg-blue-500/5 shadow-xl md:shadow-none backdrop-blur-xl border border-blue-500/10 rounded-[2.5rem] p-8 md:p-10 transition-all duration-500 md:hover:bg-blue-500/10 md:hover:shadow-xl group">
+          <div className="h-14 w-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 mb-8 text-blue-600 dark:text-blue-400 scale-110 rotate-3 md:scale-100 md:rotate-0 md:group-hover:scale-110 transition-transform duration-500 md:group-hover:rotate-3 shadow-sm">
             <Lightbulb className="h-6 w-6" />
           </div>
           <h2 className="text-2xl font-bold tracking-tight mb-6 text-foreground">How it works</h2>
@@ -116,8 +116,8 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
         </div>
 
         {/* Benefits Card */}
-        <div className="relative overflow-hidden bg-emerald-500/5 backdrop-blur-xl border border-emerald-500/10 rounded-[2.5rem] p-8 md:p-10 transition-all duration-500 hover:bg-emerald-500/10 hover:shadow-xl group">
-          <div className="h-14 w-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center border border-emerald-500/20 mb-8 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform duration-500 group-hover:-rotate-3 shadow-sm">
+        <div className="relative overflow-hidden bg-emerald-500/10 md:bg-emerald-500/5 shadow-xl md:shadow-none backdrop-blur-xl border border-emerald-500/10 rounded-[2.5rem] p-8 md:p-10 transition-all duration-500 md:hover:bg-emerald-500/10 md:hover:shadow-xl group">
+          <div className="h-14 w-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center border border-emerald-500/20 mb-8 text-emerald-600 dark:text-emerald-400 scale-110 -rotate-3 md:scale-100 md:rotate-0 md:group-hover:scale-110 transition-transform duration-500 md:group-hover:-rotate-3 shadow-sm">
             <Zap className="h-6 w-6" />
           </div>
           <h2 className="text-2xl font-bold tracking-tight mb-6 text-foreground">Benefits</h2>

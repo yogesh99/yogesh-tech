@@ -11,12 +11,12 @@ interface ToolCardProps {
 
 export default function ToolCard({ title, description, slug, isComingSoon, label }: ToolCardProps) {
   return (
-    <div className="group relative flex flex-col justify-between p-8 overflow-hidden rounded-[2.5rem] border border-foreground/10 bg-background/50 backdrop-blur-xl hover:bg-background/80 transition-all duration-500 hover:shadow-xl hover:-translate-y-1 hover:border-foreground/20 w-full min-h-[320px]">
-      <div className="absolute -top-24 -right-24 w-48 h-48 bg-foreground/[0.03] rounded-full blur-2xl group-hover:bg-foreground/[0.05] transition-colors duration-700 pointer-events-none" />
+    <div className="group relative flex flex-col justify-between p-8 overflow-hidden rounded-[2.5rem] border border-foreground/20 shadow-lg md:border-foreground/10 md:shadow-none bg-background/60 md:bg-background/50 backdrop-blur-xl transition-all duration-500 md:hover:bg-background/80 md:hover:shadow-xl md:hover:-translate-y-1 md:hover:border-foreground/20 w-full min-h-[320px]">
+      <div className="absolute -top-24 -right-24 w-48 h-48 bg-foreground/[0.05] md:bg-foreground/[0.03] rounded-full blur-2xl md:group-hover:bg-foreground/[0.05] transition-colors duration-700 pointer-events-none" />
       
       <div className="relative z-10 flex flex-col h-full">
         <div className="flex items-start justify-between mb-8">
-          <div className="h-14 w-14 bg-foreground/5 rounded-2xl flex items-center justify-center border border-foreground/10 text-foreground/80 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-500 shadow-sm">
+          <div className="h-14 w-14 bg-foreground/5 rounded-2xl flex items-center justify-center border border-foreground/10 text-foreground/80 scale-110 -rotate-3 md:scale-100 md:rotate-0 md:group-hover:scale-110 md:group-hover:-rotate-3 transition-transform duration-500 shadow-sm">
              <Command className="h-6 w-6" />
           </div>
           {label && (
@@ -41,9 +41,9 @@ export default function ToolCard({ title, description, slug, isComingSoon, label
               In Development
             </div>
           ) : (
-            <Button href={`/tools/${slug}`} className="w-full rounded-2xl text-sm font-bold shadow-sm transition-all hover:shadow-md group/btn h-12">
+            <Button href={`/tools/${slug}`} className="w-full rounded-2xl text-sm font-bold shadow-sm md:shadow-none transition-all md:hover:shadow-md group/btn h-12">
               View Specifics
-              <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+              <ArrowRight className="ml-2 h-4 w-4 translate-x-1 -translate-y-1 md:translate-x-0 md:translate-y-0 md:group-hover/btn:translate-x-1 md:group-hover/btn:-translate-y-1 transition-transform" />
             </Button>
           )}
         </div>
