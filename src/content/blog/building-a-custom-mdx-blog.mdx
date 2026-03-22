@@ -1,0 +1,35 @@
+---
+title: "Building a Custom MDX Blog"
+description: "Why I decided to build a custom static markdown blog instead of using a heavy CMS, and how you can do it too using Next.js."
+date: "2026-03-23"
+---
+
+Welcome to my new utility lab blog. This entire platform is built around the philosophy of creating fast, focused, and minimal developer tools. 
+
+When it came time to add a blog, I knew I didn't want the overhead of a database, user authentication, or a full Content Management System (CMS) like WordPress. I simply wanted to write markdown files in my code editor and have them instantly render as beautifully formatted articles.
+
+### Why Markdown and MDX?
+
+Using `MDX` lets me write normal markdown but also seamlessly integrate React components directly into the text. This is perfect for a developer blog where I might want to drop in interactive code snippets, buttons, or custom UI elements right alongside the explanation.
+
+For example, here is a simple function:
+
+```typescript
+export function greet(name: string): string {
+  return `Hello, ${name}! Welcome to the lab.`;
+}
+```
+
+### The Setup
+
+The architecture relies on three primary pieces:
+1. **Next.js App Router:** Handles dynamic routing (`/blog/[slug]`) and automatically generates static pages at build time.
+2. **gray-matter:** A lightweight Node parser that reads the YAML "frontmatter" at the top of my files to pull out metadata like the title and date.
+3. **next-mdx-remote:** Compiles the raw markdown securely on the server and renders it as React components.
+4. **Tailwind Typography:** The unsung hero. It applies elegant styling to native HTML elements (like `h1`, `p`, `pre`, `code`) generated from the markdown, without requiring me to write thousands of lines of custom CSS.
+
+### Final Thoughts
+
+This setup perfectly aligns with the mission: *do one thing exceptionally well with zero fluff.* There is no admin panel, no plugins to update, and no database queries to slow down the page request. Just raw `.mdx` files being served instantly as beautiful HTML.
+
+Stay tuned for more updates, tools, and tutorials!
