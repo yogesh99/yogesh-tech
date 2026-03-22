@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <body suppressHydrationWarning className="min-h-screen flex flex-col bg-background text-foreground selection:bg-foreground/20 selection:text-foreground">
+      <body suppressHydrationWarning className="min-h-screen flex flex-col text-foreground selection:bg-foreground/20 selection:text-foreground">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

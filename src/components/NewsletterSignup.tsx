@@ -65,7 +65,7 @@ export default function NewsletterSignup() {
             name="name"
             required
             disabled={status === "loading"}
-            placeholder="Satoshi"
+            placeholder="Rahul"
             className="w-full px-4 py-2.5 rounded-xl border border-foreground/10 bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all disabled:opacity-50 text-foreground text-sm font-medium h-[42px]"
           />
         </div>
@@ -77,7 +77,7 @@ export default function NewsletterSignup() {
             name="email"
             required
             disabled={status === "loading"}
-            placeholder="satoshi@example.com"
+            placeholder="rahul@example.com"
             className="w-full px-4 py-2.5 rounded-xl border border-foreground/10 bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all disabled:opacity-50 text-foreground text-sm font-medium h-[42px]"
           />
         </div>
