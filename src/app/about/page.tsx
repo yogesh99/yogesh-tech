@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button";
 import Link from "next/link";
-import { ArrowLeft, Rocket, Mail, Github, Twitter } from "lucide-react";
+import { ArrowLeft, Rocket, Mail, Github, Zap, Target, ShieldCheck } from "lucide-react";
 
 export const metadata = {
   title: "About | yogesh.tech",
@@ -9,63 +9,96 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col gap-16 max-w-2xl mx-auto pb-12">
+    <div className="flex flex-col gap-10 max-w-5xl mx-auto pb-16 w-full animate-in fade-in slide-in-from-bottom-8 duration-700 ease-out">
       {/* Back Link */}
       <Link 
         href="/" 
-        className="inline-flex items-center text-sm font-medium text-foreground/60 hover:text-foreground transition-colors w-fit"
+        className="inline-flex items-center text-sm font-bold text-foreground/50 hover:text-foreground transition-all duration-300 w-fit group bg-foreground/5 px-5 py-2.5 rounded-2xl border border-foreground/5 hover:border-foreground/10 hover:bg-foreground/[0.08]"
       >
-        <ArrowLeft className="mr-2 h-4 w-4" />
+        <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
         Back to Home
       </Link>
 
-      <header className="flex flex-col gap-6">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight font-mono">
-          Building tools that <span className="text-foreground/50">actually solve real problems.</span>
-        </h1>
-        <p className="text-xl text-foreground/80 leading-relaxed">
-          I'm Yogesh, a Full Stack engineer and product builder. Welcome to my utility lab.
-        </p>
-      </header>
-
-      <div className="prose prose-neutral prose-lg max-w-none text-foreground/80">
-        <h2 className="text-2xl font-bold tracking-tight text-foreground font-sans mt-0">The Mission</h2>
-        <p>
-          I started <strong>yogesh.tech</strong> because I was tired of bloated, ad-ridden tools that solved simple problems with maximum friction. 
-          When I need to clear my cache, I don't want a 10-step wizard. I just want it done.
-        </p>
-
-        <p>
-          This site is a home for the utilities I build to scratch my own itch. They are designed for developers, creators, and power users who value speed and minimal design. No fluff, just function.
-        </p>
-
-        <div className="bg-foreground/[0.03] border border-foreground/10 rounded-2xl p-8 my-10 flex flex-col gap-4">
-          <div className="flex items-center gap-3 font-semibold text-foreground">
-            <Rocket className="h-5 w-5" />
-            Core Philosophy
-          </div>
-          <ul className="list-disc pl-5 space-y-2 m-0 mt-2 text-foreground/80">
-            <li><strong>Fast:</strong> Every millisecond counts. No unnecessary libraries.</li>
-            <li><strong>Focused:</strong> Do one thing exceptionally well.</li>
-            <li><strong>Respectful:</strong> No dark patterns. Extreme privacy defaults.</li>
-          </ul>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        {/* Intro Card */}
+        <div className="md:col-span-2 relative overflow-hidden bg-background/50 backdrop-blur-xl border border-foreground/10 rounded-[2.5rem] p-8 md:p-12 transition-all duration-500 hover:bg-background/80 hover:shadow-xl hover:-translate-y-1 group">
+          <div className="absolute -top-32 -right-32 w-64 h-64 bg-foreground/[0.04] rounded-full blur-3xl group-hover:bg-foreground/[0.06] transition-colors duration-700 pointer-events-none" />
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight font-sans leading-[1.15] mb-6">
+            Building tools that <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">
+              actually solve real problems.
+            </span>
+          </h1>
+          <p className="text-xl text-foreground/70 leading-relaxed max-w-lg mb-0 font-medium">
+            I'm Yogesh, a Full Stack engineer and product builder. Welcome to my utility lab.
+          </p>
         </div>
 
-        <h2 className="text-2xl font-bold tracking-tight text-foreground font-sans pt-4">Let's Connect</h2>
-        <p>
-          If you have a problem you think could be solved with a small, focused tool, reach out! I'm always looking for new ideas to add to the lab.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 pt-6 not-prose">
-          <Button href="mailto:yogesh.waradkar@gmail.com" size="lg" className="w-full sm:w-auto">
-            <Mail className="mr-2 h-4 w-4" />
+        {/* Connect Card */}
+        <div className="relative overflow-hidden bg-foreground/[0.02] backdrop-blur-xl border border-foreground/10 rounded-[2.5rem] p-8 transition-all duration-500 hover:bg-foreground/[0.04] hover:shadow-xl hover:-translate-y-1 flex flex-col justify-center items-center gap-4 text-center group">
+          <div className="h-16 w-16 bg-background rounded-full flex items-center justify-center border border-foreground/10 mb-2 shadow-sm group-hover:scale-105 transition-transform duration-500">
+            <Mail className="h-7 w-7 text-foreground/80" />
+          </div>
+          <h2 className="text-xl font-bold tracking-tight pb-2">Let's Connect</h2>
+          <Button href="mailto:yogesh.waradkar@gmail.com" className="w-full rounded-2xl h-12 font-bold shadow-sm hover:shadow-md transition-all text-sm">
             Email Me
           </Button>
-          <Button href="https://github.com/yogesh99" target="_blank" variant="outline" size="lg" className="w-full sm:w-auto">
-            <Github className="mr-2 h-4 w-4" />
-            GitHub
+          <Button href="https://github.com/yogesh99" target="_blank" variant="outline" className="w-full rounded-2xl h-12 font-bold bg-background/50 backdrop-blur-sm border-foreground/10 hover:bg-background transition-all text-sm group/btn">
+            <Github className="mr-2 h-4 w-4 group-hover/btn:-translate-y-1 transition-transform" />
+            GitHub Profile
           </Button>
         </div>
+
+        {/* The Mission Card */}
+        <div className="md:col-span-3 relative overflow-hidden bg-gradient-to-br from-background/80 to-background/40 backdrop-blur-xl border border-foreground/10 rounded-[2.5rem] p-8 md:p-12 transition-all duration-500 hover:shadow-xl hover:border-foreground/20">
+          <div className="max-w-3xl relative z-10">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-foreground/5 border border-foreground/10 text-xs font-bold text-foreground/70 mb-8 uppercase tracking-widest">
+              <Rocket className="h-4 w-4" />
+              The Mission
+            </div>
+            <p className="text-2xl md:text-3xl font-bold tracking-tight leading-snug text-foreground/90 mb-6">
+              I started <span className="text-foreground">yogesh.tech</span> because I was tired of bloated, ad-ridden tools that solved simple problems with maximum friction.
+            </p>
+            <p className="text-lg text-foreground/70 leading-relaxed font-medium">
+              This site is a home for the utilities I build to scratch my own itch. When I need to clear my cache, I don't want a 10-step wizard. I just want it done. They are designed for developers, creators, and power users who value speed and minimal design. No fluff, just function.
+            </p>
+          </div>
+          
+          <div className="absolute -bottom-48 -right-12 w-96 h-96 bg-foreground/[0.02] rounded-full blur-3xl pointer-events-none" />
+        </div>
+
+        {/* Core Philosophy - 3 Columns */}
+        <div className="relative overflow-hidden bg-rose-500/5 backdrop-blur-xl border border-rose-500/10 rounded-[2.5rem] p-8 transition-all duration-500 hover:bg-rose-500/10 hover:shadow-xl hover:-translate-y-1 group">
+          <div className="h-14 w-14 bg-rose-500/10 rounded-2xl flex items-center justify-center border border-rose-500/20 mb-6 text-rose-600 dark:text-rose-400 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3">
+            <Zap className="h-6 w-6" />
+          </div>
+          <h3 className="text-xl font-bold tracking-tight mb-3 text-foreground">Lightning Fast</h3>
+          <p className="text-foreground/70 font-medium leading-relaxed text-sm">
+            Every millisecond counts. No unnecessary libraries or bloat. Built for absolute speed.
+          </p>
+        </div>
+
+        <div className="relative overflow-hidden bg-blue-500/5 backdrop-blur-xl border border-blue-500/10 rounded-[2.5rem] p-8 transition-all duration-500 hover:bg-blue-500/10 hover:shadow-xl hover:-translate-y-1 group">
+          <div className="h-14 w-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 mb-6 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-500 group-hover:-rotate-3">
+            <Target className="h-6 w-6" />
+          </div>
+          <h3 className="text-xl font-bold tracking-tight mb-3 text-foreground">Laser Focused</h3>
+          <p className="text-foreground/70 font-medium leading-relaxed text-sm">
+            Each utility does one thing and does it exceptionally well. No feature creep allowed.
+          </p>
+        </div>
+
+        <div className="relative overflow-hidden bg-emerald-500/5 backdrop-blur-xl border border-emerald-500/10 rounded-[2.5rem] p-8 transition-all duration-500 hover:bg-emerald-500/10 hover:shadow-xl hover:-translate-y-1 group">
+          <div className="h-14 w-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center border border-emerald-500/20 mb-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3">
+            <ShieldCheck className="h-6 w-6" />
+          </div>
+          <h3 className="text-xl font-bold tracking-tight mb-3 text-foreground">Privacy First</h3>
+          <p className="text-foreground/70 font-medium leading-relaxed text-sm">
+            No dark patterns. Extreme privacy defaults. Your data stays with you, always.
+          </p>
+        </div>
+
       </div>
     </div>
   );
