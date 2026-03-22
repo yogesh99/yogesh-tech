@@ -69,8 +69,8 @@ export default function AboutPage() {
         </div>
 
         {/* Core Philosophy - 3 Columns */}
-        <div className="relative overflow-hidden bg-rose-500/5 backdrop-blur-xl border border-rose-500/10 rounded-[2.5rem] p-8 transition-all duration-500 hover:bg-rose-500/10 hover:shadow-xl hover:-translate-y-1 group">
-          <div className="h-14 w-14 bg-rose-500/10 rounded-2xl flex items-center justify-center border border-rose-500/20 mb-6 text-rose-600 dark:text-rose-400 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3">
+        <div className="relative overflow-hidden bg-rose-500/10 md:bg-rose-500/5 shadow-xl md:shadow-none backdrop-blur-xl border border-rose-500/10 rounded-[2.5rem] p-8 transition-all duration-500 md:hover:bg-rose-500/10 md:hover:shadow-xl md:hover:-translate-y-1 group">
+          <div className="h-14 w-14 bg-rose-500/10 rounded-2xl flex items-center justify-center border border-rose-500/20 mb-6 text-rose-600 dark:text-rose-400 scale-110 rotate-3 md:scale-100 md:rotate-0 md:group-hover:scale-110 transition-transform duration-500 md:group-hover:rotate-3">
             <Zap className="h-6 w-6" />
           </div>
           <h3 className="text-xl font-bold tracking-tight mb-3 text-foreground">Lightning Fast</h3>
@@ -79,8 +79,8 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="relative overflow-hidden bg-blue-500/5 backdrop-blur-xl border border-blue-500/10 rounded-[2.5rem] p-8 transition-all duration-500 hover:bg-blue-500/10 hover:shadow-xl hover:-translate-y-1 group">
-          <div className="h-14 w-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 mb-6 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-500 group-hover:-rotate-3">
+        <div className="relative overflow-hidden bg-blue-500/10 md:bg-blue-500/5 shadow-xl md:shadow-none backdrop-blur-xl border border-blue-500/10 rounded-[2.5rem] p-8 transition-all duration-500 md:hover:bg-blue-500/10 md:hover:shadow-xl md:hover:-translate-y-1 group">
+          <div className="h-14 w-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 mb-6 text-blue-600 dark:text-blue-400 scale-110 -rotate-3 md:scale-100 md:rotate-0 md:group-hover:scale-110 transition-transform duration-500 md:group-hover:-rotate-3">
             <Target className="h-6 w-6" />
           </div>
           <h3 className="text-xl font-bold tracking-tight mb-3 text-foreground">Laser Focused</h3>
@@ -89,8 +89,8 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="relative overflow-hidden bg-emerald-500/5 backdrop-blur-xl border border-emerald-500/10 rounded-[2.5rem] p-8 transition-all duration-500 hover:bg-emerald-500/10 hover:shadow-xl hover:-translate-y-1 group">
-          <div className="h-14 w-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center border border-emerald-500/20 mb-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-3">
+        <div className="relative overflow-hidden bg-emerald-500/10 md:bg-emerald-500/5 shadow-xl md:shadow-none backdrop-blur-xl border border-emerald-500/10 rounded-[2.5rem] p-8 transition-all duration-500 md:hover:bg-emerald-500/10 md:hover:shadow-xl md:hover:-translate-y-1 group">
+          <div className="h-14 w-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center border border-emerald-500/20 mb-6 text-emerald-600 dark:text-emerald-400 scale-110 rotate-3 md:scale-100 md:rotate-0 md:group-hover:scale-110 transition-transform duration-500 md:group-hover:rotate-3">
             <ShieldCheck className="h-6 w-6" />
           </div>
           <h3 className="text-xl font-bold tracking-tight mb-3 text-foreground">Privacy First</h3>
